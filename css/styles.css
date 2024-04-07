@@ -361,8 +361,7 @@ padding-bottom: 8px;
 /* =================PORTFOLIO================= */
 
 .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+   
 }
 .portfolio-container {
     align-items: center;
@@ -387,11 +386,10 @@ margin-bottom: 72px;
 .portfolio-menu-list {
   
     display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 48px;
-    background: 
-    #ffffff;
+    flex-direction: column;
+    gap: 48px;
+   justify-content: center;
+  align-items: center;
 }
 
 .portfolio-cover-text {
@@ -401,19 +399,19 @@ margin-bottom: 72px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    background-color: #4d5ae5;
-    height: 100%;
- 
     padding: 40px 32px;
-   
+    background: #4d5ae5;
+    width: 100%;
+    height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);, 0.2, 1);
 }
 
 .portfolio-menu-item { 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    width: calc((100% - 48px) / 3);
+    width: 288px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-menu-item:hover  {
@@ -450,6 +448,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
 }
+
 
 
 
@@ -634,8 +633,13 @@ border-radius: 4px;
 .backdrop {
     position: fixed;
    top: 0;
+   left: 0;
     width: 100%;
     height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-self: center;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -644,7 +648,7 @@ border-radius: 4px;
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open{
+.backdrop.is-open{
 opacity: 1;
 visibility: visible ;
 pointer-events: auto;
@@ -966,6 +970,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
     flex-basis: calc((100% - 24px) / 2);
   
 }
+.portfolio-menu-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+
+.portfolio-menu-item {
+    flex-basis: calc((100% - 24px) / 2);
+}
     }
 
     @media screen and (min-width: 1158px) {
@@ -1032,8 +1045,28 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
             margin-bottom: 48px;
           }
 
-          .team-menu-list {
+          .advantages-menu-list {
+            gap: 24px;
             flex-wrap: nowrap;
+          }
+          .cont-icon {
+            display: flex;
+          }
+          .advantages-menu-title
+          {
+            font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+          }
+
+          .advantages-menu-item {
+            flex-basis: calc((100% - 3 * 24px) / 4);
+          }
+          .advantages-menu-text {
+            font-weight: 400;
+          }
+          .team-menu-list {
+            flex-wrap: wrap;
           }
 
           .team-menu-item {
@@ -1041,5 +1074,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
                 flex-basis: calc((100% - 3 * 24px) / 4);
               }
           }
+
+          .portfolio-menu-list {
+            flex-direction: row;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+          }
+          .portfolio-menu-item {
+            flex-basis: calc((100% - 2 * 24px) / 3);
+          }
+
     } 
    
