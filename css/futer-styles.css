@@ -78,6 +78,7 @@ body {
                 color:#f4f4fd;
                 max-width: 264px;
                 margin-right: auto;
+                text-align: left;
                 }
                 .container-item-icons {
                     align-items: baseline;
@@ -89,13 +90,6 @@ body {
                     max-width: 208px;
                 }
                 .social-links-footer {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 16px;
-                }
-                .social-links-footer {
-        
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -128,5 +122,70 @@ body {
                     letter-spacing: 0.02em;
                     color: #ffffff;
                     margin-bottom: 16px;
-                    gap 24px;
+                    gap: 24px;
+                }
+                .subscribe-input {
+                    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+                    border: 1px solid #fff;
+                    border-radius: 4px;
+                    width: 288px;
+                    height: 40px;
+                font-size: 12px;
+                line-height: 2;
+                letter-spacing: 0.04em;
+                color: #fff;
+                background-color: transparent;
+                padding-left: 16px;
+                }
+                .container-btn-subscribe {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.04em;
+                text-align: center;
+                color: #fff;
+                min-width: 165px;   
+                height: 40px;
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                border-radius: 4px;
+                padding: 8px 24px;
+                width: 165px;
+                height: 40px;
+                background-color:#4d5ae5;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                letter-spacing: 0.04em;
+                cursor: pointer;
+                border: none;
+                border-radius: 4px; 
+                }
+                
+                .btn-subscribe {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 16px; 
+                    fill: #fff
+                   
+                }
+                @media (max-width: 767px) {
+                    .container-footer {
+                        text-align: center;
+                        margin-bottom: 72px;
+                    }
+                    .container-icons {
+                        margin-bottom: 72px;
+                    }
+                    .container-item-icons {
+                        text-align: center;
+                    }
+                    .container-subscribe {
+                        text-align: center;
+                    }
+                    .social-links-footer {
+                        justify-content: center;
+                    }
+                    .container-btn-subscribe {
+                        margin: 16px auto 0 auto;
+                    }
                 }

@@ -503,7 +503,7 @@
         letter-spacing: 0.02em;
         color: #ffffff;
         margin-bottom: 16px;
-        gap 24px;
+        gap: 24px;
     }
     .subscribe-form {
         display: flex;

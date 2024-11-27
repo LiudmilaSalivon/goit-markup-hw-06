@@ -407,7 +407,7 @@ body {
         width: 100%;
         height: 100%;
         transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);, 0.2, 1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     }
     
     .portfolio-menu-item { 
@@ -506,7 +506,8 @@ body {
         letter-spacing: 0.02em;
         color:#f4f4fd;
         max-width: 264px;
-        
+        text-align: left;
+        margin-bottom: 16px;
         margin-right: auto;
         }
     
@@ -870,6 +871,29 @@ body {
         .container-subscribe {
           margin: 0 auto;
         }
+        .container-footer {
+            width: 264px;
+        }
+        
+            .container-footer {
+                text-align: center;
+                margin-bottom: 72px;
+            }
+    
+            .container-icons {
+                margin-bottom: 72px;
+            }
+            .container-item-icons {
+                text-align: center;
+            }
+    
+            .container-subscribe {
+                text-align: center;
+            }
+
+            .social-links-footer {
+                justify-content: center;
+            }
       }
     
     @media screen and (min-width: 768px) {
@@ -1005,9 +1029,8 @@ body {
         align-items: start;
     }
     
-    .container-footer {
-        width: 264px;
-    }
+  
+    
     .subscribe-form {
         flex-direction: row;
         gap: 24px;
@@ -1125,7 +1148,7 @@ body {
               }
     
               .team-menu-item {
-                {
+                
                     flex-basis: calc((100% - 3 * 24px) / 4);
                   }
               }
@@ -1159,5 +1182,5 @@ body {
               .subscribe-input {
                 opacity: 1;
               }
-        } 
+        
     
