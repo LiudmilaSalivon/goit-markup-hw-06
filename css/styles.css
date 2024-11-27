@@ -873,11 +873,8 @@ body {
         }
         .container-footer {
             width: 264px;
-        }
-        
-            .container-footer {
-                text-align: center;
-                margin-bottom: 72px;
+            text-align: center;
+            margin-bottom: 72px;
             }
     
             .container-icons {
@@ -1025,6 +1022,23 @@ body {
         flex-basis: calc((100% - 24px) / 2);
     }
     
+    .container-footer {
+        display: flex; 
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1157px){
+            .container-footer {
+                max-width: 584px;
+                gap: 24px 24px; 
+                }
+            .footer-container-subscribe {
+                margin-left: 0px;
+            }
+        }
+        .container-btn-subscribe {
+            margin-left: 0px;
+        }
+
     .footer-wrap-container {
         max-width: 584px;
         flex-direction: row;
@@ -1032,8 +1046,14 @@ body {
         gap: 72px 24px;
         align-items: start;
     }
-    
-  
+    .subscribe-input
+    {
+        width: 264 px;
+    }
+    .subscribe-form {
+        display: flex
+        gap: 24px;
+    }
     
     .subscribe-form {
         flex-direction: row;
