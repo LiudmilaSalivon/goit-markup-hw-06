@@ -517,7 +517,7 @@ body {
     }
     
     .container-icons {
-        display: flex;
+      display: flex;
       flex-direction: column;
       width: 208px;
       gap: 16px;
@@ -1173,11 +1173,11 @@ body {
                 margin: 0;
               }
               .container-footer {
-                margin-right: 120px;
+                
               }
     
               .container-icons {
-                margin-right: 80px;
+               
               }
               .subscribe-input {
                 opacity: 1;
