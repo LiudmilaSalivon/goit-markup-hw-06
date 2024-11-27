@@ -887,8 +887,12 @@ body {
                 text-align: center;
             }
     
+            .subscribe-label {
+                margin-bottom: 16px;
+            }
             .container-subscribe {
                 text-align: center;
+                margin-bottom: 16px;
             }
 
             .social-links-footer {
