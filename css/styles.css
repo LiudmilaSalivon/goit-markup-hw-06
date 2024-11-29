@@ -242,7 +242,7 @@ body {
     }
     
         .cont-icon{
-            display: flex;
+            display: none;
             align-items: center;
             justify-content: center;
             border: 1px solid #8e8f99;
@@ -489,7 +489,7 @@ body {
             text-transform: uppercase;
             color: #4d5ae5;
             display: inline-block;
-          max-width: 264px;
+            max-width: 264px;
         }
         
         .logo-footer
@@ -913,14 +913,8 @@ body {
             gap: 40px;
          }  
         .nav-link{
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.5;
-            letter-spacing: 0.02em;
             color: #2e2f42;
             padding: 24px 0;
-            display: block;
-           
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
@@ -963,17 +957,7 @@ body {
         .address-link:focus {
             color: #404bbf;
         }
-        .advantages-menu-list {
-            flex-direction: row;
-         flex-wrap: wrap;
-         gap: 72px 24px;
-        }
-        .advantages-menu-item {
-            width: calc((100% - 24px) / 2);
-        }
-        .advantages-menu-title {
-            text-align: left;
-         }
+        
          .hero {
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
@@ -1002,6 +986,20 @@ body {
         max-width: 496px;
       }
     
+      .advantages-menu-list {
+        display: flex;
+        flex-direction: row;
+     flex-wrap: wrap;
+     gap: 72px 24px;
+    }
+    
+    .advantages-menu-item {    
+        flex-basis: calc((100% - 24px) / 2);flex-basis: calc((100% - 24px) / 2);
+    }
+    .advantages-menu-title {
+        text-align: start;
+     }
+     
       .team-menu-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1025,8 +1023,20 @@ body {
     .container-footer {
         display: flex; 
         }
+.modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+
+}
+.modal-form {
+    width: 360px;
+  }
+.check-text {
+    align-items: baseline;
+}
 
         @media screen and (min-width: 768px) and (max-width: 1157px){
+           
             .container-footer {
                 max-width: 584px;
                 gap: 24px 24px; 
@@ -1085,6 +1095,10 @@ body {
       }
         }
     @media screen and (min-width: 768px) {
+        .cont-icon {
+            display: flex;
+          }
+
         .container-footer {
             width: 264px;
             height: 112px;
@@ -1179,9 +1193,7 @@ opacity: 0px;
                 gap: 24px;
                 flex-wrap: nowrap;
               }
-              .cont-icon {
-                display: flex;
-              }
+              
               .advantages-menu-title
               {
                 font-weight: 500;
