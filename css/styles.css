@@ -642,7 +642,7 @@ body {
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    .backdrop.is-open{
+   .is-open {
     opacity: 1;
     visibility: visible ;
     pointer-events: auto;
@@ -1030,9 +1030,13 @@ body {
             .container-footer {
                 max-width: 584px;
                 gap: 24px 24px; 
+                margin-right: 24px;
                 }
             .footer-container-subscribe {
                 margin-left: 0px;
+            }
+            .container-subscribe {
+                padding-bottom: 16px;
             }
         }
         .container-btn-subscribe {
@@ -1051,14 +1055,12 @@ body {
         width: 264 px;
     }
     .subscribe-form {
+        flex-direction: row;
         display: flex
-        gap: 24px;
+        
     }
     
-    .subscribe-form {
-        flex-direction: row;
-        gap: 24px;
-    }
+    
     .subscribe-input {
         width: 264px;
     }
@@ -1082,7 +1084,33 @@ body {
         gap: 4px;
       }
         }
-    
+    @media screen and (min-width: 768px) {
+        .container-footer {
+            width: 264px;
+            height: 112px;
+            top: 100px;
+            left: 156px;
+            gap: 0px;
+            opacity: 0px;
+            
+            margin-right: 120px;
+          }
+
+          .container-icons {
+            width: 208px;
+height: 80px;
+top: 100px;
+left: 540px;
+gap: 0px;
+opacity: 0px;
+
+          margin-right: 80px;
+          }
+          .container-subscribe {
+            padding-bottom: 16px;
+        }
+        
+    }
         @media screen and (min-width: 1158px) {
             .container {
                 max-width: 1158px; 
@@ -1188,21 +1216,17 @@ body {
                 padding: 96px 0;
                 background-color: #2e2f42;            
               }
-    
+              .logo-footer {
+                margin: 0;
+                margin-bottom: 16px;
+              }
               .footer-wrap-container {
                 gap: 0;
               }
-    
-              .logo-footer {
-                margin: 0;
-              }
-              .container-footer {
-                
-              }
-    
-              .container-icons {
-               
-              }
+
+            .container-btn-subscribe {
+              
+            }
               .subscribe-input {
                 opacity: 1;
               }
