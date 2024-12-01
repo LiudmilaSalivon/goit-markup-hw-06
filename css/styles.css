@@ -275,12 +275,10 @@ body {
     .team {
         background: #f4f4fd;
         padding: 96px 28px;
-
     }
     .team-container {
-       
-     
     }
+
     .team-title {
         text-transform: capitalize;
         font-family: "Roboto", sans-serif;
@@ -298,11 +296,7 @@ body {
       justify-content: center;
       flex-direction: column;
       gap: 72px;
-      
     }
-    
-    
-    
     .team-menu-item {
         max-width: 264px;
         border-radius: 0px 0px 4px 4px;
@@ -318,11 +312,7 @@ body {
         padding: 32px 16px;
        
     }
-    
-    
-    
     .team-menu-title {
-    
     text-align: center;
     margin-bottom: 8px;
     }
@@ -370,11 +360,15 @@ body {
     /* =================PORTFOLIO================= */
     
     .portfolio {
-       
+       padding-left: 16px;
+       padding-right: 16px;
+       padding-bottom: 96px;
     }
+
     .portfolio-container {
         align-items: center;
     }
+
     .portfolio-title {
         text-transform: capitalize;
         font-family: "Roboto", sans-serif;
@@ -393,7 +387,6 @@ body {
     }
     
     .portfolio-menu-list {
-      
         display: flex;
         flex-direction: column;
         gap: 48px;
@@ -1105,7 +1098,7 @@ gap: 4px;
 .check-text {
     align-items: baseline;
 }
-}
+
         
     @media screen and (min-width: 768px) {
       
@@ -1165,7 +1158,8 @@ gap: 4px;
                 justify-content: flex-start;
                 flex-direction: column;
                 gap: 8px;
-                flex-basis: calc((100% - 24px * 3) / 4);
+
+                flex-basis: calc((100% - 48px * 3) / 4);
             }
             .advantages-menu-title {
                 font-weight: 500;
@@ -1178,4 +1172,14 @@ gap: 4px;
             }
         }
     
+       .portfolio-menu-item {
+        flex-basis: calc((100% - 48px) / 3);
+        background-color: #f0f0f0;
+        transition: box-shadow 0.3s; /* Добавим плавный переход */
+      }
+      
+      .portfolio-menu-item:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Горизонтальное смещение, вертикальное смещение, размытие и цвет*/
+      }
+       
        
