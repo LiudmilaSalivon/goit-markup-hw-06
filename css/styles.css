@@ -24,7 +24,12 @@ body {
         display: block;
         max-width: 100%;
         height: auto;
-    }
+        margin: 0 auto;
+    } 
+    input {
+        font-family: inherit;
+      }
+      
     .hidden {
         display: none;
     }
@@ -33,9 +38,14 @@ body {
         padding-left: 16px;
         padding-right: 16px;
         margin: 0 auto;
-    }       
+    }     
+    .section {
+        padding: 96px 0;
+      }
+        
     
     .header {
+        margin: 0 auto;
         border-bottom: 1px solid #e7e9fc;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     }
@@ -85,8 +95,8 @@ body {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        padding: 17px 0;
-        
+        padding: 16px 0;
+                
     }
     
     .nav-list {
@@ -100,7 +110,7 @@ body {
     }
     
     .open-menu-btn {
-        padding: 0;
+        padding: 16px 0;
         line-height: 0;
         background-color: transparent;
         cursor: pointer;
@@ -109,6 +119,8 @@ body {
     
     /* =================HERO================= */
     .hero {
+    display: block;
+    width: 320px;
     box-sizing: content-box;
     background: #2e2f42;
     background-repeat: no-repeat;
@@ -118,7 +130,8 @@ body {
     padding: 72px 0;
     background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/ipg_11_mob.jpg);
-    }
+   
+}
     
     @media screen and (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -134,8 +147,6 @@ body {
     
     .hero-container {
         align-items: center;
-      
-     
     }
     
     .hero-title {
@@ -147,10 +158,8 @@ body {
         text-align: center;
         max-width: 216px;
         margin: 0 auto 72px;
-      
-    
-    }
-    
+       
+      }
     .hero-ord-btn {
     font-weight: 500;
     font-size: 16px;
@@ -201,15 +210,7 @@ body {
         fill: transparent;
         border: 64px;
     }
-    .advantages-title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: #2e2f42;
-        
-    }
+    
     
     .advantages-menu-list {
         display: flex;
@@ -222,23 +223,25 @@ body {
         width: 100%;
     }
     
+   
     .advantages-menu-title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         letter-spacing: 0.02em;
-        color: #2e2f42;
-        margin-bottom: 8px; 
         text-align: center;
-    }  
+        color: #2e2f42;
+        font-family: var(--navy-blue);
+        margin-bottom: 8px; 
+    }
     
     .advantages-menu-text {
         font-weight: 500;
         font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-    
+    color: var(--slate);
+    font-family: var(--font-family);
     }
     
         .cont-icon{
@@ -270,10 +273,12 @@ body {
     /* =================TEAM================= */
     
     .team {
-    
+        background: #f4f4fd;
+        padding: 96px 28px;
+
     }
     .team-container {
-        background: #f4f4fd;
+       
      
     }
     .team-title {
@@ -293,6 +298,7 @@ body {
       justify-content: center;
       flex-direction: column;
       gap: 72px;
+      
     }
     
     
@@ -301,16 +307,16 @@ body {
         max-width: 264px;
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-          0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-      
+          0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);          
+          background:  #ffffff;
     }
     
     .team-image {
-    margin-bottom: 8px;
+  
     }
     .team-item {
-        padding-top: 32px;
-        padding-bottom: 32px;
+        padding: 32px 16px;
+       
     }
     
     
@@ -318,7 +324,7 @@ body {
     .team-menu-title {
     
     text-align: center;
-    
+    margin-bottom: 8px;
     }
     
     .team-menu-text {
@@ -327,7 +333,7 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     }
     
     .social-links {
@@ -862,62 +868,41 @@ body {
         fill: #f4f4fd;
     }
     
-    @media screen and (max-width: 767px) {
-        .header-container {
-          gap: 149px;
-        }
-      
-        .container-item-icons,
-        .container-subscribe {
-          margin: 0 auto;
-        }
-        .container-footer {
-            width: 264px;
-            text-align: center;
-            margin-bottom: 72px;
-            }
-    
-            .container-icons {
-                margin-bottom: 72px;
-            }
-            .container-item-icons {
-                text-align: center;
-            }
-    
-            .subscribe-label {
-                margin-bottom: 16px;
-            }
-            .container-subscribe {
-                text-align: center;
-                margin-bottom: 16px;
-            }
-
-            .social-links-footer {
-                justify-content: center;
-            }
-      }
+  
     
     @media screen and (min-width: 768px) {
         .container {
             max-width: 768px;
         }  
-        .open-menu-btn {
-            display: none;
+        
+        .header-container{
+            width: 736px; 
         }
         .logo {
+          
+            padding: 24px 0;
             margin-right: 120px;
         }
-    
+    .open-menu-btn {
+        display: none;
+        padding: 24px 0;
+    }
         .nav-list {
             display: flex;
             gap: 40px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em
+
          }  
         .nav-link{
+            display: block;
             color: #2e2f42;
             padding: 24px 0;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
+       
         .nav-link:hover,
         .nav-link:focus{
             color: #404bbf;
@@ -957,8 +942,11 @@ body {
         .address-link:focus {
             color: #404bbf;
         }
-        
+        .hero {
+            max-width: 768px;
+        }
          .hero {
+           
             background-image: linear-gradient(
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)
@@ -985,6 +973,28 @@ body {
         line-height: 1.07;
         max-width: 496px;
       }
+        .advantages-container {
+            width: 736px;
+            height: 312px;
+            margin-bottom: 192px;
+      }
+      .cont-icon {
+        display: none;
+      }
+      .container-icons {
+        width: 208px;
+        height: 80px;
+        top: 100px;
+        left: 540px;
+        gap: 0px;
+        opacity: 0px;
+
+      margin-right: 80px;
+      }
+      .advantages-menu-item {    
+        flex-basis: calc((100% - 24px) / 2);
+     
+    }
     
       .advantages-menu-list {
         display: flex;
@@ -993,13 +1003,11 @@ body {
      gap: 72px 24px;
     }
     
-    .advantages-menu-item {    
-        flex-basis: calc((100% - 24px) / 2);flex-basis: calc((100% - 24px) / 2);
-    }
+    
     .advantages-menu-title {
         text-align: start;
      }
-     
+  
       .team-menu-list {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1019,10 +1027,73 @@ body {
     .portfolio-menu-item {
         flex-basis: calc((100% - 24px) / 2);
     }
-    
     .container-footer {
         display: flex; 
+        max-width: 584px;
+        gap: 24px 24px; 
+        margin-right: 24px;
         }
+        .container-footer {
+            width: 264px;
+            height: 112px;
+            top: 100px;
+            left: 156px;
+            gap: 0px;
+            opacity: 0px;
+            
+            margin-right: 120px;
+          }
+    .footer-container-subscribe {
+        margin-left: 0px;
+    }
+    .container-subscribe {
+        padding-bottom: 16px;
+    }
+}
+.container-btn-subscribe {
+    margin-left: 0px;
+}
+
+.footer-wrap-container {
+max-width: 584px;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 72px 24px;
+align-items: start;
+}
+.subscribe-input
+{
+width: 264 px;
+}
+.subscribe-form {
+flex-direction: row;
+display: flex
+
+}
+
+
+.subscribe-input {
+width: 264px;
+}
+
+.modal {
+width: 408px;
+padding: 72px 24px 24px;
+}
+
+.modal-form {
+width: 360px;
+}
+.modal-check {
+width: 360px;
+}
+.check-text {
+align-items: baseline;
+}
+.checkbox-text {
+display: inline-flex;
+gap: 4px;
+}
 .modal {
     width: 408px;
     padding: 72px 24px 24px;
@@ -1034,92 +1105,13 @@ body {
 .check-text {
     align-items: baseline;
 }
-
-        @media screen and (min-width: 768px) and (max-width: 1157px){
-           
-            .container-footer {
-                max-width: 584px;
-                gap: 24px 24px; 
-                margin-right: 24px;
-                }
-            .footer-container-subscribe {
-                margin-left: 0px;
-            }
-            .container-subscribe {
-                padding-bottom: 16px;
-            }
-        }
-        .container-btn-subscribe {
-            margin-left: 0px;
-        }
-
-    .footer-wrap-container {
-        max-width: 584px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 72px 24px;
-        align-items: start;
-    }
-    .subscribe-input
-    {
-        width: 264 px;
-    }
-    .subscribe-form {
-        flex-direction: row;
-        display: flex
+}
         
-    }
-    
-    
-    .subscribe-input {
-        width: 264px;
-    }
-    
-    .modal {
-        width: 408px;
-        padding: 72px 24px 24px;
-      }
-    
-      .modal-form {
-        width: 360px;
-      }
-      .modal-check {
-        width: 360px;
-      }
-      .check-text {
-        align-items: baseline;
-      }
-      .checkbox-text {
-        display: inline-flex;
-        gap: 4px;
-      }
-        }
     @media screen and (min-width: 768px) {
-        .cont-icon {
-            display: flex;
-          }
+      
+    
 
-        .container-footer {
-            width: 264px;
-            height: 112px;
-            top: 100px;
-            left: 156px;
-            gap: 0px;
-            opacity: 0px;
-            
-            margin-right: 120px;
-          }
-
-          .container-icons {
-            width: 208px;
-height: 80px;
-top: 100px;
-left: 540px;
-gap: 0px;
-opacity: 0px;
-
-          margin-right: 80px;
-          }
+         
           .container-subscribe {
             padding-bottom: 16px;
         }
@@ -1130,6 +1122,10 @@ opacity: 0px;
                 max-width: 1158px; 
                 padding: 0 15px; 
             } 
+            .section {
+                padding: 120px 0;
+              }
+            
             .logo {
                 margin-right: 76px;
             }
@@ -1141,11 +1137,35 @@ opacity: 0px;
                 font-size: 16px;
                 line-height: 1.5;
             }
+            .hero {
+              
+                padding: 188px 472px 292px 472px;
+            }
+            .hero-title {
+                margin-bottom: 48px;
+            }
             .advantages {
                 padding: 120px 0;
             }
+            .advantages-container {
+                width: 1128px;
+                height: 224px;
+              margin: 120px 156px;
+            }
+            .advantages-menu-list{
+                gap: 24px;
+                flex-wrap: nowrap;
+            }
+            .cont-icon{
+                display: flex;
+            }
             .advantages-menu-item {
-                width: calc((100% - 24px * 3) / 4);
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 8px;
+                flex-basis: calc((100% - 24px * 3) / 4);
             }
             .advantages-menu-title {
                 font-weight: 500;
@@ -1158,89 +1178,4 @@ opacity: 0px;
             }
         }
     
-        @media screen and (max-width: 1158px) {
-            .cont-icon {
-                display: none;
-            }
-    
-            .hero {
-                background-image: linear-gradient(
-                    rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)
-                  ),
-                  url(../images/ipg_11.jpg);
-                padding: 188px 0;
-                max-width: 1440px;
-              }
-            
-              @media screen and (-webkit-min-device-pixel-ratio: 2),
-                (min-resolution: 192dpi),
-                (min-resolution: 2dppx) {
-                .hero {
-                  background-image: linear-gradient(
-                      rgba(46, 47, 66, 0.7),
-                      rgba(46, 47, 66, 0.7)
-                    ),
-                    url(../images/ipg_11_2x.jpg);
-                }
-              }
-            
-              .hero-title {
-                margin-bottom: 48px;
-              }
-    
-              .advantages-menu-list {
-                gap: 24px;
-                flex-wrap: nowrap;
-              }
-              
-              .advantages-menu-title
-              {
-                font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-              }
-    
-              .advantages-menu-item {
-                flex-basis: calc((100% - 3 * 24px) / 4);
-              }
-              .advantages-menu-text {
-                font-weight: 400;
-              }
-              .team-menu-list {
-                flex-wrap: wrap;
-              }
-    
-              .team-menu-item {
-                
-                    flex-basis: calc((100% - 3 * 24px) / 4);
-                  }
-              }
-    
-              .portfolio-menu-list {
-                flex-direction: row;
-        flex-wrap: wrap;
-        gap: 48px 24px;
-              }
-           
-    
-              .footer {
-                padding: 96px 0;
-                background-color: #2e2f42;            
-              }
-              .logo-footer {
-                margin: 0;
-                margin-bottom: 16px;
-              }
-              .footer-wrap-container {
-                gap: 0;
-              }
-
-            .container-btn-subscribe {
-              
-            }
-              .subscribe-input {
-                opacity: 1;
-              }
-        
-    
+       
