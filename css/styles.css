@@ -493,8 +493,16 @@ body {
         
         .logo-footer
           {
+        
+            color: #4d5ae5;
             display: inline-block;
-            margin: 0 auto;
+            margin-bottom: 16px;
+            font-family: Raleway, sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.17;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
            
           }
           
@@ -506,7 +514,6 @@ body {
         color:#f4f4fd;
         max-width: 264px;
         text-align: left;
-     
         margin-right: auto;
         }
     
@@ -1162,11 +1169,12 @@ body {
        .portfolio-menu-item {
         flex-basis: calc((100% - 48px) / 3);
         background-color: #f0f0f0;
-        transition: box-shadow 0.3s; /* Добавим плавный переход */
-      }
+        transition: box-shadow 0.3s;
+    }
       
       .portfolio-menu-item:hover {
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Горизонтальное смещение, вертикальное смещение, размытие и цвет*/
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: #fff;
       }
        
       .footer-wrap-container {   
@@ -1175,4 +1183,4 @@ body {
     .container-footer {
         margin-right: 120px;
     }
-            }
+        }
