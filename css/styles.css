@@ -932,6 +932,8 @@ body {
     }
     
     .check-text {
+        display: flex;
+        align-items: center;
         font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -953,6 +955,7 @@ body {
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
     display: inline-flex;
+    flex-shrink: 0;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -972,7 +975,7 @@ body {
     }
     
     
-    .modal-check:checked + .check-text> span {
+    .modal-check:checked + .check-text> .span-checkbox {
         background-color: #404bbf;
         border: none;
         fill: #f4f4fd;
